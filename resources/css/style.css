@@ -14,6 +14,7 @@ body {
   margin: 0 auto;
 }
 
+
 /* This secction deals with the HEADER */
 header {
   background-color: black;
@@ -75,33 +76,63 @@ nav .content{
   justify-content: space-between;
 }
 
+
 /* This deals with the PRODUCTS section */
 .products .content {
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .item {
   width: 30%;
-  display: flex;
-  flex-flow: column wrap;
+  border: 4px solid black;
 }
 
 .image {
   height: 9rem;
-  border: 4px solid black;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.item img {
-  width: 100%;
-  height: 100%;
+.image img {
+  max-width: 100%;
+  max-height: 100%
 }
-
 
 .item h3 {
   background-color: black;
-  width: 100%;
   color: white;
   text-align: center;
   padding: 0.5rem 0;
+}
+
+
+/* This section deals with LOCATION AND HOURS section */
+#loc_and_hours .content {
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.box {
+  width: 35%;
+}
+
+.box h3 {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+
+
+/* This section deals with the FOOTER */
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer .content {
+  align-items: center;
+  height: 5rem;
 }
