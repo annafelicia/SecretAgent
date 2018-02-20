@@ -1,0 +1,60 @@
+/* CSS for Secret Agent Supply Inc. */
+
+html{
+  font-size: 18px;
+  }
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  width: 960px;
+  margin: auto;
+}
+
+/* This secction deals with the HEADER */
+header {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+header img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+header span {
+  padding: 0.66rem 0;
+}
+
+
+/* This secction deals with the BANNER */
+.banner {
+  background-image: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.headline {
+  width: 20rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+}
+
+.headline h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+
+/* This section deals with the NAV */
