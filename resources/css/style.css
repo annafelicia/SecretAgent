@@ -72,7 +72,12 @@ nav span {
   padding: 0.75rem 0;
 }
 
-nav .content{
+#collapsed {
+  justify-content: center;
+  display: none;
+}
+
+#navigation {
   justify-content: space-between;
 }
 
@@ -110,7 +115,7 @@ nav .content{
 
 
 /* This section deals with LOCATION AND HOURS section */
-#loc_and_hours .content {
+#loc_hours .content {
   justify-content: space-between;
   margin-bottom: 4rem;
 }
@@ -135,4 +140,99 @@ footer {
 footer .content {
   align-items: center;
   height: 5rem;
+}
+
+              /* */
+
+/* This section deals with screens up to 1024px */
+@media only screen and (max-width: 1024px) {
+
+/*NAVIGATION*/
+  #collapsed {
+    display: flex;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+
+/*PRODUCTS*/
+  #glasses {
+    display: none;
+  }
+
+  .item {
+    width: 47%;
+  }
+
+
+/* LOCATION & HOURS */
+  .box {
+    width: 35%;
+  }
+}
+
+
+/* This section deals with screens up to 470px */
+@media only screen and (max-width: 470px) {
+  .content {
+    width: 470px;
+  }
+
+
+/* BANNER */
+  .banner {
+    height: 15rem;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: 10rem;
+  }
+
+  .headline h2 {
+    font-size: 0.77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+  }
+
+
+/* PRODUCTS */
+  .products .content {
+    justify-content: center;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+
+/* LOCATION & HOURS */
+  #loc_hours .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  #hours {
+    margin-top: 0.5rem;
+  }
+
+
+/* FOOTER */
+  footer .content {
+    justify-content: center;
+  }
 }
